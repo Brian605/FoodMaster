@@ -1,0 +1,24 @@
+#cart{
+	position:fixed;
+	top:25%;
+	right:10%;
+}
+
+ul{list-style:none;
+}
+
+.img-cicle{
+	width:10%;
+	height:10%;
+	border:solid 1px black;
+
+}
+
+#cancel{
+
+position:absolute;
+right:10%;
+
+text-align:right;
+
+}
