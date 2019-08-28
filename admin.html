@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Food Chap Chap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Food ordering system"/>
+  <meta name="author" content="Return 0;" />
+
+   <!-- css -->
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/Style.css" rel="stylesheet"/>
+
+</head>
+<body class="container-fluid" onload="initialize();">
+
+<h2><marquee><span class="badge">The</span><span class="label label-success">Food Master</span><span class="badge">#1</span>Admin Panel
+</marquee></h2>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-inverse" role="navigation">
+ <div class="navbar-header"> <button type="buttoun" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+<span class="icon-bar"></span> 
+<span class="icon-bar"></span>
+</button> <a class="navbar-brand " href="File1.html"><h2 class="label label-warning">Food Master</h2></a> 
+</div> 
+<div class="collapse navbar-collapse" id="myNavbar"> 
+<ul class="nav navbar-nav"> <li class="active">
+<a href="Index.html">Home</a>
+</li> 
+<li><a href="#">Delete Item</a>
+</li> 
+<li><a href="admin.html">Admin Panel</a>
+</li> 
+<li><a href="#">Update Available Meals</a>
+</li> 
+<li><a href="#">Contact Us</a>
+</li> 
+<li class="line-divider"> </li>
+<li><a href="Register.html">
+<span class="glyphicon glyphicon-user"></span> Sign Up</a>
+</li> 
+<li><a href="login.php">
+<span class="glyphicon glyphicon-log-in"></span> Login</a>
+</li> 
+</ul> 
+</div> 
+</nav>
+
+<!--Introductory text-->
+<blockquote> This is the <i class="label label-success">Food Master</i>Admin page where you can add various<i class="label label-warning">Dishes.</i>.The details in * are .<i class="label label-primary"> Mandatory</i></blockquote>
+
+ <form class="container" method="POST" action="admin.php" enctype="multipart/form-data" onsubmit="return isValidDetails();" name="reg">
+ <h4 class="page-header" >
+ 	Please Input All Details.</h4>
+ <span id="status"></span>
+ 
+ <!-- Input Fields-->
+ <div class="form-group">
+ <label for="name">Food Name: </label>
+ <input type="text" required class="form-control" maxlength="25" minlength="4" placeholder="2 to 25 characters" name="name">
+ </div> 
+ 
+  <div class="form-group">
+ <label for="caption">Caption Text: </label>
+ <input type="text" required class="form-control" maxlength="125" minlength="4" placeholder="4 to 125 characters" name="caption">
+ </div> 
+ 
+  <div class="form-group">
+ <label for="prev">Previous Price: </label>
+ <input type="number" required class="form-control" maxlength="8" minlength="2" placeholder="a number" name="prev">
+ </div> 
+ 
+  <div class="form-group">
+ <label for="curr">Current Price: </label>
+ <input type="text" required class="form-control" maxlength="8" minlength="2" placeholder="a number" name="curr">
+ </div> 
+ 
+  <div class="form-group">
+ <label for="fod">Food Image: </label>
+ <input type="file" required class="form-control" placeholder="Click to pick" name="fod">
+ </div> 
+ <div class="form-group">
+ 	<button type="submit" class="btn btn-success" role="button">Submit
+ 	</button>
+ 	<button type="reset" id="cancel" class="btn btn-danger" role="button">Cancel
+ 	</button>
+ 	</div>
+ </form>
+ 
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+ </body>
+ </html>	

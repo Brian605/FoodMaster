@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Register</title> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Food ordering system"/>
+  <meta name="author" content="Return 0;" />
+  
+   <!-- css -->
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/Style.css" rel="stylesheet" />
+
+   </head>
+   <body class="container">
+   <form class="container" method="POST" action="reg.php" enctype="multipart/form-data" onsubmit="return isValidDetails();" name="reg">
+ <h4 class="page-header" >
+ 	Please Input All Details.</h4>
+ <span id="status"></span>
+ 
+ <!-- Input Fields-->
+ <div class="form-group">
+ <label for="user">User Name: </label>
+ <input type="text" required class="form-control" maxlength="8" minlength="4" placeholder="4-8 characters" name="user">
+ </div> 
+ 
+  <div class="form-group">
+ <label for="email">User Email: </label>
+ <input type="email" name="email" required class="form-control" placeholder="your email" required>
+ </div> 
+ 
+  <div class="form-group">
+ <label for="phone">Phone Number: </label>
+ <input type="phonenumber" required class="form-control" maxlength="10" minlength="10" name="phone" placeholder="10 characters" required>
+ </div> 
+ 
+  <div class="form-group">
+ <label for="pass1">Password: </label>
+ <input type="password" required class="form-control" maxlength="16" minlength="6" placeholder="6-16 characters" name="pass1">
+ </div> 
+ 
+  <div class="form-group">
+ <label for="pass2">Confirm Password: </label>
+ <input type="password" required class="form-control" maxlength="16" minlength="6" placeholder="6-16 characters" name="pass2">
+ </div> 
+ 
+  <div class="form-group">
+ <label for="user">Profile Picture </label>
+ <input type="file" required class="form-control" placeholder="at most 2mb photo" name="image">
+ </div> 
+ 
+  <div class="form-group">
+<button type="submit" class="btn btn-primary" role="button">Register</button>
+ <br><br>
+ <span class="divider">Already Have An Account?
+ </span>
+ 
+ <button class="btn btn-link" role="button" type="button" onclick="gotologin();">Sign In</button>
+ </div> 
+
+<script src="js/authfuncs.js" ></script>  
+</form>
+   </body>
+</html>

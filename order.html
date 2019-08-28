@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Food Chap Chap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Food ordering system" />
+    <meta name="author" content="Return 0;" />
+
+    <!-- css -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/Style.css" rel="stylesheet" />
+
+</head>  
+<body class="container-fluid">
+ <h2><marquee><span class="badge">The</span><span class="label label-success">Food Master</span><span class="badge">#1</span>
+</marquee></h2>
+
+<div id="table"></div>
+<script src="js/Events.js"></script>
+<script>loadCart();</script>
+<button onclick="makeOrder();" id="buys" type="button" role="button" class="btn btn-success">Order Now</button>
+<button onclick="cancelOrder();" id="cancel" type="button" role="button" class="btn btn-danger">Cancel</button>
+
+<script src="js/ajaxhandler.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
